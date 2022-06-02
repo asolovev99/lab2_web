@@ -13,19 +13,40 @@
         </button>
     </p>
     <p>
-        <select>
+        <select id="selectSort">
             <option>Без сортировки</option>
             <option>По названию города А-Я</option>
             <option>По названию города Я-А</option>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
-            <option></option>
+            <option>По численности населения (по убыванию)</option>
+            <option>По численности населения (по возрастанию)</option>
         </select>
+
+        <input id="inputAmountOfCities" type="text" placeholder="Введите количество городов для вывода на странице" />
+    </p>
+    <table border="1" id="tableTownsInfo">
+        <thead>
+            <tr>
+                <th>Страна</th>
+                <th>Город</th>
+                <th>Координаты</th>
+                <th>Численность населения</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <p>
+        <button id="buttonPreviousListOfTowns">
+            Назад
+        </button>
+
+        <button id="buttonNextListOfTowns">
+            Вперёд
+        </button>
     </p>
 </body>
+<script src="main.js" defer></script>
 </html>
 <!--
 http://geodb-cities-api.wirefreethought.com/demo
