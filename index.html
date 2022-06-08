@@ -6,22 +6,28 @@
     <title>Лаб 2</title>
 </head>
 <body>
+
     <p>
         <input id="inputTown" type="text" placeholder="Введите первые буквы названия города" />
         <button id="buttonSearch">
             Искать
         </button>
+
+        <div class="spin-wrapper">
+            <div class="spinner">
+            </div>
+        </div>
     </p>
     <p>
         <select id="selectSort">
-            <option>Без сортировки</option>
-            <option>По названию города А-Я</option>
-            <option>По названию города Я-А</option>
-            <option>По численности населения (по убыванию)</option>
-            <option>По численности населения (по возрастанию)</option>
+            <option value="">Без сортировки</option>
+            <option value="name">По названию города A-Z</option>
+            <option value="-name">По названию города Z-A</option>
+            <option value="-population">По численности населения (по убыванию)</option>
+            <option value="population">По численности населения (по возрастанию)</option>
         </select>
 
-        <input id="inputAmountOfCities" type="text" placeholder="Введите количество городов для вывода на странице" />
+        <input id="inputAmountOfCities" type="text" placeholder="Введите количество городов для вывода на странице (от 0 до 10)" />
     </p>
     <table border="1" id="tableTownsInfo">
         <thead>
@@ -33,7 +39,6 @@
             </tr>
         </thead>
         <tbody>
-
         </tbody>
     </table>
     <p>

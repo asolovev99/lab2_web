@@ -1,0 +1,78 @@
+p {    
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+table {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+input {
+    /*min-width: 430px;*/
+    
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+
+
+
+/*body {
+    min-height: 100vh;
+    padding: 0px;
+    margin: 0px;
+}*/
+
+.spin-wrapper {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: #080705;
+}
+
+    .spin-wrapper .spinner {
+        position: absolute;
+        height: 60%;
+        width: 60%;
+        border: 3px solid transparent;
+        border-top-color: #A04668;
+        top: 50%;
+        left: 50%;
+        margin: -30%;
+        border-radius: 50%;
+        animation: spin 2s linear infinite;
+    }
+
+        .spin-wrapper .spinner:before, .spin-wrapper .spinner:after {
+            content: "";
+            position: absolute;
+            border: 3px solid transparent;
+            border-radius: 50%;
+        }
+
+        .spin-wrapper .spinner:before {
+            border-top-color: #254E70;
+            top: -12%;
+            left: -12%;
+            right: -12%;
+            bottom: -12%;
+            animation: spin 3s linear infinite;
+        }
+
+        .spin-wrapper .spinner:after {
+            border-top-color: #FFFBFE;
+            top: 6%;
+            left: 6%;
+            right: 6%;
+            bottom: 6%;
+            animation: spin 4s linear infinite;
+        }
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
