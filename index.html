@@ -3,22 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="spin.css">
     <title>Лаб 2</title>
 </head>
 <body>
 
-    <p>
+    <div id="divInputNameOfTown" class="container">
         <input id="inputTown" type="text" placeholder="Введите первые буквы названия города" />
         <button id="buttonSearch">
             Искать
         </button>
-
-        <div class="spin-wrapper">
-            <div class="spinner">
-            </div>
-        </div>
-    </p>
-    <p>
+    </div>
+    <div class="container">
         <select id="selectSort">
             <option value="">Без сортировки</option>
             <option value="name">По названию города A-Z</option>
@@ -28,7 +24,7 @@
         </select>
 
         <input id="inputAmountOfCities" type="text" placeholder="Введите количество городов для вывода на странице (от 0 до 10)" />
-    </p>
+    </div>
     <table border="1" id="tableTownsInfo">
         <thead>
             <tr>
@@ -40,18 +36,60 @@
         </thead>
         <tbody>
         </tbody>
-    </table>
-    <p>
-        <button id="buttonPreviousListOfTowns">
-            Назад
-        </button>
+        <tfoot>
+        <tr>
+            <td data-v-2b5d5a17="" colspan="3">
+                <div data-v-2b5d5a17="" style="display: flex; justify-content: space-between;">
+                <span data-v-2b5d5a17="">
+                    <a data-v-2b5d5a17="">
+                        First
+                    </a> |
+                    <a data-v-2b5d5a17="">
+                        Prev
+                    </a>
+                </span>
+                    <span data-v-2b5d5a17="">
+                    Page 2 of 6
+                </span>
+                    <span data-v-2b5d5a17="">
+                    <a data-v-2b5d5a17="">
+                        Next
+                    </a>
+                    |
+                    <a data-v-2b5d5a17="">
+                        Last
+                    </a>
+                </span>
+                </div>
+            </td>
+        </tr>
 
-        <button id="buttonNextListOfTowns">
-            Вперёд
-        </button>
-    </p>
+
+
+        <tr>
+
+
+
+
+            <th>
+                <button id="buttonPreviousListOfTowns">
+                    Назад
+                </button>
+            </th>
+            <th></th>
+            <th></th>
+            <th>
+                <button id="buttonNextListOfTowns">
+                    Вперёд
+                </button>
+            </th>
+        </tr>
+        </tfoot>
+    </table>
 </body>
-<script src="main.js" defer></script>
+
+<!--<script src="spin.js" ></script>-->
+<script src="main.js" type="module" defer></script>
 </html>
 <!--
 http://geodb-cities-api.wirefreethought.com/demo
