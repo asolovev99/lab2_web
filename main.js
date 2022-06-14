@@ -48,7 +48,7 @@ async function doRequestAndUpdateTable(firstLettersOfTown, sort, limitOfTowns, o
         length: 36, // The length of each line
         width: 15, // The line thickness
         radius: 32, // The radius of the inner circle
-        scale: 0.1, // Scales overall size of the spinner
+        scale: 0.2, // Scales overall size of the spinner
         corners: 1, // Corner roundness (0..1)
         speed: 1, // Rounds per second
         rotate: 0, // The rotation offset
@@ -56,12 +56,12 @@ async function doRequestAndUpdateTable(firstLettersOfTown, sort, limitOfTowns, o
         direction: 1, // 1: clockwise, -1: counterclockwise
         color: '#ffd800', // CSS color or array of colors
         fadeColor: 'transparent', // CSS color or array of colors
-        top: '17px', // Top position relative to parent
-        left: '270px', // Left position relative to parent
+        top: '0px', // Top position relative to parent
+        left: '350px', // Left position relative to parent
         shadow: '0 0 1px transparent', // Box-shadow for the lines
         zIndex: 2000000000, // The z-index (defaults to 2e9)
         className: 'spinner', // The CSS class to assign to the spinner
-        position: 'absolute', // Element positioning
+        position: 'relative', // Element positioning
     };
 
     let spinner = new Spinner(opts).spin(document.getElementById("divInputNameOfTown"));
