@@ -7,14 +7,13 @@
     <title>Лаб 2</title>
 </head>
 <body>
-
-    <div id="divInputNameOfTown" class="container">
+    <div id="divInputNameOfTown" class="divBody elementBody">
         <input id="inputTown" type="text" placeholder="Введите первые буквы названия города" />
         <button id="buttonSearch">
             Искать
         </button>
     </div>
-    <div class="container">
+    <div class="divBody elementBody">
         <select id="selectSort">
             <option value="">Без сортировки</option>
             <option value="name">По названию города A-Z</option>
@@ -36,60 +35,25 @@
         </thead>
         <tbody>
         </tbody>
-        <tfoot>
-        <tr>
-            <td data-v-2b5d5a17="" colspan="3">
-                <div data-v-2b5d5a17="" style="display: flex; justify-content: space-between;">
-                <span data-v-2b5d5a17="">
-                    <a data-v-2b5d5a17="">
-                        First
-                    </a> |
-                    <a data-v-2b5d5a17="">
-                        Prev
-                    </a>
-                </span>
-                    <span data-v-2b5d5a17="">
-                    Page 2 of 6
-                </span>
-                    <span data-v-2b5d5a17="">
-                    <a data-v-2b5d5a17="">
-                        Next
-                    </a>
-                    |
-                    <a data-v-2b5d5a17="">
-                        Last
-                    </a>
-                </span>
-                </div>
-            </td>
-        </tr>
-
-
-
-        <tr>
-
-
-
-
-            <th>
-                <button id="buttonPreviousListOfTowns">
-                    Назад
-                </button>
-            </th>
-            <th></th>
-            <th></th>
-            <th>
-                <button id="buttonNextListOfTowns">
-                    Вперёд
-                </button>
-            </th>
-        </tr>
+        <tfoot>        
+            <tr>
+                <td colspan="4">
+                    <div class="divTableFoot">                    
+                        <button id="buttonPreviousListOfTowns">
+                            Назад
+                        </button>                                                           
+                        <button id="buttonNextListOfTowns">
+                            Вперёд
+                        </button>                                        
+                    </div>                
+                </td>
+            </tr>
         </tfoot>
     </table>
 </body>
 
 <!--<script src="spin.js" ></script>-->
-<script src="main.js" type="module" defer></script>
+<script type="module" src="main.js" defer></script>
 </html>
 <!--
 http://geodb-cities-api.wirefreethought.com/demo
